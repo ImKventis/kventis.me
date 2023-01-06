@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/global.css" rel="stylesheet">
+    <title>Kventis.me</title>
+</head>
+<body>
+
+    <div class="contain">
+        <div style="display: flex; align-items:center;border-bottom: white;">
+            <h1 style="float: left">Kventis</h1>
+            <img class="avatar" src="/avatar.gif" alt="">
+        </div>
+        <p style="clear:both">A Music, Programming and Electrical Engineering hobbyist.<br>Currently studying Computer Science and making fun
+            projects.</p>
+        <p>Public API: <a href="#">Coming soon..</a></p>
+        <p>A Project: <a id="proj" href="">Atsudae</a></p>
+        <p>Email: <a href="mailto: kventis.gg@protonmail.com">kventis.gg@protonmail.com</a></p>
+        <p>Keys: <a href="/pgp.pub">BEGIN PGP PUB..</a>  <a href="/ssh.pub">SSH-RSA AAAAB3NzaC..</a></p>
+        <div class="icons">
+            <img onclick="window.location.replace('https://github.com/imkventis')" src="/icons/github.svg" alt="Github">
+            <img onclick="window.location.replace('https://steamcommunity.com/id/Kventis69/')" src="/icons/steam.svg" alt="Steam">
+            <img onclick="window.location.replace('https://twitter.com/ImKventis')" src="/icons/twitter.svg" alt="Twitter">
+        </div>
+    </div>
+
+<!-- Projects Array -->
+    <script type="text/javascript" src="/projects.js"></script>
+    <script type="text/javascript">
+        function change_proj_text() {
+            let proj = EXPROJECTS[Math.floor(Math.random() * EXPROJECTS.length)];
+            let to_change = document.getElementById("proj");
+            to_change.innerHTML = proj.name;
+            to_change.href = proj.url;
+        }
+        setInterval(change_proj_text, 250)
+    </script>
+</body>
+</html>

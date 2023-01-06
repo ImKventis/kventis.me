@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 23, 23);
+    font-family: 'Inter', sans-serif;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px;
+    /*border-style: none none solid none;*/
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    padding-bottom: 0;
+}
+/*Right pain in my ass*/
+img.avatar {
+    width: 50px;
+    /*padding-right: 10px;*/
+    margin-left: 10px;
+    height: 50px;
+    border-radius:50%;
+    border:2px solid white;
+    vertical-align:middle
+}
+a:visited, a:link, a:active {
+    text-decoration: underline;
+    color: yellow;
+}
+a:hover  {
+    cursor: pointer;
+}
+div.contain {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+div.contain p {
+    margin-top: -15px;
+    color: white;
+    letter-spacing: 2px;
+    float:none;
+}
+div.icons img {
+    height: 30px;
+    width: 30px;
+    float: left;
+    padding: 0 15px 15px;
+}
+div.icons img:hover {
+    filter: invert(0.1) sepia(1) saturate(18) hue-rotate(0deg);
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 12px;
+        letter-spacing: 0;
+        padding-top: 1px;
+        padding-left: 1px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
